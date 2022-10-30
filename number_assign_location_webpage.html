@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<style>
+    area {
+        border-color: aquamarine;
+    }
+</style>
+<body>
+    <!--    <iframe src="https://www.google.com/maps/d/embed?mid=1oJ_5tu3xrbbJ9iuEKY5Dujk29pDDomE&ehbc=2E312F&z=70" width="640" height="480"></iframe>
+    -->
+
+    <img alt="map" class="map" onclick="mouse_position()" src="C:/Users/pooja/Downloads/lowndes-map.jpg" width="50%" usemap="#image-map" />
+    <map name="image-map">
+        <area alt="car1" href="https://www.image-map.net/" coords="216,423,252,402,261,419,223,442" shape="poly">
+<!--        <area alt="car2" href="https://www.image-map.net/" coords="333,466,344,482,382,462,374,442" shape="poly">
+        <area alt="car3" href="https://www.image-map.net/" coords="404,424,412,441,449,420,442,402" shape="poly">
+        <area alt="car4" href="https://www.image-map.net/" coords="467,390,464,409,510,413,511,393" shape="poly">
+        <area alt="car5" href="https://www.image-map.net/" coords="526,425,537,409,573,434,563,451" shape="poly">
+        <area alt="car6" href="https://www.image-map.net/" coords="591,474,602,456,640,479,631,497" shape="poly">-->
+    </map>
+    <a href="sms:+15739152585">Send an SMS</a>
+</body>
+</html>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.maphilight.min.js"></script>
+<script type="text/javascript">
+    function mouse_position() {
+        var e = window.event;
+
+        var posX = e.clientX;
+        var posY = e.clientY;
+
+        console.log(posX, posY)
+    }
+</script>
